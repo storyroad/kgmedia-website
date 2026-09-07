@@ -282,6 +282,7 @@ BEFORE PUBLISHING
       height: 88px; border-color: var(--line-dark); background: rgba(9, 9, 8, .9);
       -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
     }
+    .site-header.is-menu-open { background: var(--ink); -webkit-backdrop-filter: none; backdrop-filter: none; }
     .header-inner {
       width: var(--content); height: 100%; margin: auto; display: flex;
       align-items: center; justify-content: space-between; gap: 28px;
@@ -307,7 +308,8 @@ BEFORE PUBLISHING
     .nav-link:hover::after, .nav-link[aria-current="true"]::after { transform: scaleX(1); transform-origin: left; }
     .menu-toggle {
       position: relative; z-index: 102; width: 48px; height: 48px; display: none;
-      place-items: center; padding: 0; border: 0; background: transparent; cursor: pointer;
+      place-items: center; padding: 0; border: 1px solid var(--line-dark); border-radius: 50%;
+      background: var(--ink); box-shadow: 0 8px 24px rgba(0,0,0,.22); cursor: pointer;
     }
     .menu-lines, .menu-lines::before, .menu-lines::after {
       width: 22px; height: 1px; display: block; background: var(--ivory); transition: transform .22s, opacity .22s;
@@ -320,8 +322,10 @@ BEFORE PUBLISHING
     .menu-toggle[aria-expanded="true"] .menu-lines::before { transform: translateY(7px) rotate(45deg); }
     .menu-toggle[aria-expanded="true"] .menu-lines::after { transform: translateY(-7px) rotate(-45deg); }
     .mobile-nav {
-      position: fixed; z-index: 101; inset: 0; display: none;
-      padding: calc(var(--header-h) + 48px) 24px 38px; background: var(--ink);
+      position: fixed; z-index: 99; inset: 0; width: 100vw; height: 100vh; height: 100dvh;
+      display: none; overflow-y: auto; overscroll-behavior: contain;
+      padding: calc(var(--header-h) + 48px) max(24px,calc((100vw - var(--content)) / 2)) 38px;
+      background: #090908; color: var(--ivory);
     }
     .mobile-nav.is-open { display: flex; flex-direction: column; justify-content: space-between; }
     .mobile-nav-links { display: grid; gap: 4px; }
@@ -332,7 +336,7 @@ BEFORE PUBLISHING
     }
 
     /* Shared */
-    .section { position: relative; padding: clamp(88px, 11vw, 160px) 0; }
+    .section { position: relative; padding: clamp(88px, 11vw, 160px) 0; scroll-margin-top: 86px; }
     .section-inner { width: var(--content); margin: auto; }
     .light-section { background: var(--ivory); color: var(--ink); }
     .eyebrow {
@@ -750,7 +754,8 @@ BEFORE PUBLISHING
         <span class="menu-lines" aria-hidden="true"></span>
       </button>
     </div>
-    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+  </header>
+  <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
       <div class="mobile-nav-links">
         <a class="mobile-nav-link" href="#work">Work</a>
         <a class="mobile-nav-link" href="#services">Services</a>
@@ -759,8 +764,7 @@ BEFORE PUBLISHING
         <a class="mobile-nav-link" href="#availability">Check your date</a>
       </div>
       <p class="mobile-nav-meta"><span data-copy="business.serviceArea">Ottawa and beyond</span> · <span data-copy="business.hours">By appointment</span></p>
-    </nav>
-  </header>
+  </nav>
 
   <main id="main-content">
     <section class="hero" id="home" aria-labelledby="hero-title">
@@ -1256,7 +1260,19 @@ BEFORE PUBLISHING
         document.body.classList.toggle("nav-open", open);
       }
       toggle.addEventListener("click", function () { setMenu(toggle.getAttribute("aria-expanded") !== "true"); });
-      mobileMenu.querySelectorAll("a").forEach(function (link) { link.addEventListener("click", function () { setMenu(false); }); });
+      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          var id = link.getAttribute("href").slice(1);
+          var target = document.getElementById(id);
+          if (!target) return;
+          event.preventDefault();
+          setMenu(false);
+          requestAnimationFrame(function () {
+            target.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "start" });
+            if (window.history && history.pushState) history.pushState(null, "", "#" + id);
+          });
+        });
+      });
       document.addEventListener("keydown", function (event) { if (event.key === "Escape") setMenu(false); });
       window.addEventListener("resize", function () { if (innerWidth > 780) setMenu(false); });
 
