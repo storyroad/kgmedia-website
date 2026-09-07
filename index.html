@@ -1,0 +1,1394 @@
+<!doctype html>
+<!--
+HOW TO EDIT YOUR SITE
+
+1. Change business details, prices, hours, wording, service descriptions,
+   photos, and alt text inside the EDITABLE SITE CONTENT block below.
+ 2. To replace a photo or film, add the optimized file to the assets folder and
+    change its filename in the content block.
+ 3. Add confirmed bookings to availability.bookedDates using YYYY-MM-DD. The
+    public calendar updates automatically when this file is published.
+ 4. Connect Formspree, Kit, and Cloudflare by replacing the clearly marked
+   placeholder values in CONNECTED TOOLS. The Ottawa map is already connected.
+ 5. Save this file, then upload index.html and the assets folder together.
+
+BEFORE PUBLISHING
+- Replace any stock images with rights-cleared KGMedia client work.
+- Add the Formspree endpoint, Kit form action, Cloudflare token, and real domain.
+- Add only verified client testimonials with permission.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090908">
+
+  <!-- ==================== EDITABLE SITE CONTENT ==================== -->
+  <script>
+    window.KGMEDIA_CONTENT = {
+      seo: {
+        title: "KGMedia | Wedding & Cultural Event Photographer Ottawa",
+        description: "KGMedia creates emotional wedding, cultural event, portrait and business photography in Ottawa and beyond. Sessions from $90. Request your date."
+      },
+      brand: {
+        name: "KGMedia",
+        descriptor: "Photography · Ottawa + Beyond",
+        voiceLine: "Emotion-led photography in Ottawa and beyond."
+      },
+      business: {
+        serviceArea: "Ottawa and beyond",
+        hours: "By appointment",
+        startingPrice: "$90 per session",
+        delivery: "48–72 hours unless otherwise agreed"
+      },
+      hero: {
+        eyebrow: "Ottawa · Available to travel",
+        headline: "Keep the feeling.",
+        subhead: "Emotion-led photography for weddings, cultural celebrations, portraits and brands—created in Ottawa and wherever your story takes us.",
+        primaryAction: "Tell us what you’re planning",
+        secondaryAction: "View selected work",
+        note: "Sessions from $90 · Delivery in 48–72 hours"
+      },
+      motionFeature: {
+        eyebrow: "Automotive culture · Italian car showcase",
+        headline: "Culture, in motion.",
+        body: "The design, energy and people around a remarkable machine are part of the story too. KGMedia photographs cultural gatherings and automotive experiences with the same attention to atmosphere and detail.",
+        credit: "KGMedia motion study · Ottawa"
+      },
+      servicesSection: {
+        eyebrow: "What we photograph",
+        headline: "Every story has its own rhythm.",
+        intro: "From quiet portraits to rooms alive with tradition, KGMedia photographs what matters without pulling you out of the moment.",
+        priceNote: "Portrait and creative sessions begin at $90. Wedding, event, commercial and travel coverage is quoted according to date, duration and location.",
+        action: "Request a tailored quote"
+      },
+      services: [
+        {
+          number: "01",
+          name: "Weddings",
+          description: "The anticipation, the ceremony, the people who travelled to stand beside you—and everything that happens between the planned photographs.",
+          image: "assets/wedding-candid.webp",
+          alt: "Bride smiling as she embraces her partner during an outdoor wedding"
+        },
+        {
+          number: "02",
+          name: "Cultural events",
+          description: "Thoughtful coverage of traditions, movement, family and community, approached with curiosity, respect and attention to detail.",
+          image: "assets/cultural-events-little-italy.webp",
+          alt: "Red Italian performance car surrounded by spectators at a cultural event in Little Italy, Ottawa"
+        },
+        {
+          number: "03",
+          name: "Celebrations",
+          description: "Birthdays, graduations, showers and milestones photographed with the energy of the room and the people at its centre.",
+          image: "assets/celebration.webp",
+          alt: "Young child at an outdoor birthday celebration"
+        },
+        {
+          number: "04",
+          name: "Portraits & modelling",
+          description: "Guided, expressive sessions for individuals, couples and models who want photographs that feel confident without feeling forced.",
+          image: "assets/portrait-studio.webp",
+          alt: "Black and white studio maternity portrait"
+        },
+        {
+          number: "05",
+          name: "Business photography",
+          description: "Headshots, brand stories, products, hospitality and automotive work created to give your business a distinctive visual presence.",
+          image: "assets/hospitality.webp",
+          alt: "Wine being poured during an evening dining experience"
+        }
+      ],
+      workSection: {
+        eyebrow: "Selected work",
+        headline: "Stories, not categories.",
+        intro: "A celebration can be intimate, electric, ceremonial or completely unexpected. The thread is always the same: honest connection, carefully seen.",
+        action: "Have something different in mind? Tell us about it."
+      },
+      gallery: [
+        { image: "assets/hero-wedding.webp", alt: "Bride and groom posed together in wedding attire", category: "Weddings", size: "tall" },
+        { image: "assets/cultural-events-little-italy.webp", alt: "Red Italian performance car displayed before a crowd in Little Italy, Ottawa", category: "Cultural events", size: "" },
+        { image: "assets/portrait-maternity.webp", alt: "Maternity portrait beside a bright window", category: "Portraits", size: "wide" },
+        { image: "assets/celebration.webp", alt: "Child seated beside a birthday cake outdoors", category: "Milestones", size: "" },
+        { image: "assets/portrait-studio.webp", alt: "Monochrome studio portrait of an expectant mother", category: "Portraits", size: "tall" },
+        { image: "assets/wedding-story.webp", alt: "Wedding couple holding hands beside historic architecture", category: "Weddings", size: "" },
+        { image: "assets/hospitality.webp", alt: "Atmospheric dining scene with wine and warm evening light", category: "Business", size: "wide" }
+      ],
+      story: {
+        eyebrow: "The approach",
+        headline: "Present for the meaning. Ready for the moment.",
+        paragraphOne: "Every gathering has a language of its own—the gestures people recognize, the traditions they carry and the relationships that need no explanation. KGMedia approaches each assignment by listening first, then photographing with intention.",
+        paragraphTwo: "You will receive direction when it helps and space when the moment should unfold on its own. The result is a collection that feels polished without losing the life inside it.",
+        steps: [
+          { number: "01", title: "Share the vision", text: "Tell us about the people, date, location and moments that matter most." },
+          { number: "02", title: "Shape the coverage", text: "KGMedia confirms availability, recommends the right approach and sends a tailored proposal." },
+          { number: "03", title: "Live the moment", text: "Be present. The expressions, details and movement are being carefully preserved." }
+        ]
+      },
+      proof: {
+        eyebrow: "Client words",
+        headline: "The photographs matter. So does how it felt making them.",
+        intro: "The best client stories speak to both: images they value and an experience that let them remain present.",
+        testimonials: [
+          /*
+          Add verified reviews in this format:
+          { quote: "Approved client quote.", name: "First name", detail: "Wedding · Ottawa" }
+          */
+        ]
+      },
+      locationSection: {
+        eyebrow: "Ottawa + travel",
+        headline: "Based in Ottawa. Ready to follow the story.",
+        body: "Sessions are scheduled by request throughout Ottawa and the surrounding region, with travel available. Share your date and location, and KGMedia will confirm availability and prepare the right coverage.",
+        mapCaption: "Serving Ottawa, surrounding communities and destination clients."
+      },
+      availability: {
+        eyebrow: "Availability",
+        headline: "Is your date still open?",
+        body: "Choose a date to see its current status. Open dates can be carried directly into your enquiry.",
+        note: "This calendar is a planning guide and is updated as bookings are confirmed. Your date is secured only after written confirmation and receipt of the required e-transfer deposit.",
+        bookedDates: [
+          /* Add confirmed bookings here in YYYY-MM-DD format, for example:
+             "2026-10-17",
+             "2026-11-07"
+          */
+        ]
+      },
+      enquiry: {
+        eyebrow: "Start a conversation",
+        headline: "Tell us what you want to remember.",
+        body: "Share a few details about your date, location and vision. You will receive an email response with availability, next steps and a tailored quote where needed.",
+        submit: "Send my request",
+        sending: "Sending…",
+        success: "Your request is on its way. Thank you for considering KGMedia—we’ll be in touch by email.",
+        setupMessage: "The form is ready, but its Formspree endpoint must be added near the top of index.html.",
+        error: "Your request could not be sent. Check your connection and try again.",
+        policy: "Submitting this form is an enquiry, not a confirmed booking. A booking is secured only after written confirmation and receipt of the required e-transfer deposit."
+      },
+      newsletter: {
+        eyebrow: "Stay close",
+        headline: "A little beauty in your inbox.",
+        body: "Receive occasional new stories, seasonal session openings and practical ideas for feeling at ease in front of the camera.",
+        submit: "Join the list",
+        consent: "By subscribing, you agree to receive KGMedia email updates. You can unsubscribe at any time.",
+        setupMessage: "Newsletter signup is ready, but its Kit form action must be added near the top of index.html."
+      },
+      footer: {
+        services: "Weddings · Cultural events · Celebrations · Portraits · Business",
+        copyright: "KGMedia. All rights reserved."
+      },
+
+      /* ======================== CONNECTED TOOLS ========================
+         These accounts must belong to the site owner. Never add passwords,
+         banking details, or Supabase service-role keys to this file. */
+      tools: {
+        formspreeEndpoint: "https://formspree.io/f/YOUR_FORM_ID",
+        kitFormAction: "YOUR_KIT_FORM_ACTION",
+        cloudflareAnalyticsToken: "YOUR_CLOUDFLARE_TOKEN",
+        mapEmbedUrl: "https://www.google.com/maps?q=Ottawa%2C%20Ontario%2C%20Canada&z=10&output=embed"
+      }
+    };
+  </script>
+
+  <title>KGMedia | Wedding & Cultural Event Photographer Ottawa</title>
+  <meta name="description" content="KGMedia creates emotional wedding, cultural event, portrait and business photography in Ottawa and beyond. Sessions from $90. Request your date.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KGMedia | Wedding & Cultural Event Photographer Ottawa">
+  <meta property="og:description" content="Emotion-led photography for weddings, cultural celebrations, portraits and brands in Ottawa and beyond.">
+  <meta property="og:image" content="assets/hero-wedding.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/kgmedia-favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/kgmedia-apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="KGMedia">
+  <!-- Add after choosing a domain: <link rel="canonical" href="https://YOUR-DOMAIN.ca/"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/hero-wedding.webp" as="image" type="image/webp">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "KGMedia",
+      "description": "Wedding, cultural event, portrait, celebration and business photography in Ottawa and beyond.",
+      "areaServed": { "@type": "City", "name": "Ottawa" },
+      "priceRange": "$90+",
+      "image": "assets/hero-wedding.webp"
+    }
+  </script>
+
+  <style>
+    :root {
+      --ink: #090908;
+      --ink-soft: #151311;
+      --ivory: #f5f0e8;
+      --muted: #d8d0c5;
+      --oxblood: #742b3a;
+      --gold: #bf8a3d;
+      --line-dark: rgba(245, 240, 232, .17);
+      --line-light: rgba(9, 9, 8, .16);
+      --display: "Cormorant Garamond", Georgia, serif;
+      --body: "Manrope", system-ui, sans-serif;
+      --content: min(1180px, calc(100vw - 40px));
+      --header-h: 82px;
+      --hero-scale: 1.1;
+      --hero-blur: 5px;
+      --hero-inset: 0px;
+      --hero-copy-opacity: 1;
+      --hero-copy-shift: 0px;
+      --hero-finish-opacity: 0;
+      color-scheme: dark;
+      font-synthesis: none;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--ink); scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: var(--ink);
+      color: var(--ivory);
+      font: 400 16px/1.65 var(--body);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    body.nav-open { overflow: hidden; }
+    img { display: block; max-width: 100%; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { color: inherit; }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--gold); color: var(--ink); }
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: fixed; z-index: 1000; top: 12px; left: 12px; padding: 10px 16px;
+      transform: translateY(-160%); background: var(--ivory); color: var(--ink);
+      font-weight: 600; transition: transform .18s ease;
+    }
+    .skip-link:focus { transform: none; }
+
+    /* Header */
+    .site-header {
+      position: fixed; z-index: 100; inset: 0 0 auto; height: var(--header-h);
+      border-bottom: 1px solid transparent;
+      transition: background-color .24s, border-color .24s, height .24s;
+    }
+    .site-header.is-scrolled, .site-header.is-menu-open {
+      height: 70px; border-color: var(--line-dark); background: rgba(9, 9, 8, .9);
+      -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+    }
+    .header-inner {
+      width: var(--content); height: 100%; margin: auto; display: flex;
+      align-items: center; justify-content: space-between; gap: 28px;
+    }
+    .brand {
+      position: relative; z-index: 102; min-height: 44px; display: inline-flex;
+      align-items: center; gap: 11px;
+    }
+    .brand img { width: 56px; height: 56px; object-fit: contain; filter: brightness(0) invert(1); }
+    .brand-text { display: grid; line-height: 1; }
+    .brand-name { font-size: .88rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; }
+    .brand-descriptor { margin-top: 6px; color: var(--muted); font-size: .54rem; letter-spacing: .14em; text-transform: uppercase; }
+    .desktop-nav { display: flex; align-items: center; gap: clamp(18px, 2.2vw, 34px); }
+    .nav-link {
+      position: relative; padding: 12px 0; color: var(--muted); font-size: .72rem;
+      font-weight: 600; letter-spacing: .11em; text-transform: uppercase;
+    }
+    .nav-link::after {
+      content: ""; position: absolute; inset: auto 0 7px; height: 1px;
+      transform: scaleX(0); transform-origin: right; background: var(--gold); transition: transform .22s;
+    }
+    .nav-link:hover, .nav-link[aria-current="true"] { color: var(--ivory); }
+    .nav-link:hover::after, .nav-link[aria-current="true"]::after { transform: scaleX(1); transform-origin: left; }
+    .menu-toggle {
+      position: relative; z-index: 102; width: 48px; height: 48px; display: none;
+      place-items: center; padding: 0; border: 0; background: transparent; cursor: pointer;
+    }
+    .menu-lines, .menu-lines::before, .menu-lines::after {
+      width: 22px; height: 1px; display: block; background: var(--ivory); transition: transform .22s, opacity .22s;
+    }
+    .menu-lines { position: relative; }
+    .menu-lines::before, .menu-lines::after { content: ""; position: absolute; left: 0; }
+    .menu-lines::before { top: -7px; }
+    .menu-lines::after { top: 7px; }
+    .menu-toggle[aria-expanded="true"] .menu-lines { background: transparent; }
+    .menu-toggle[aria-expanded="true"] .menu-lines::before { transform: translateY(7px) rotate(45deg); }
+    .menu-toggle[aria-expanded="true"] .menu-lines::after { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-nav {
+      position: fixed; z-index: 101; inset: 0; display: none;
+      padding: calc(var(--header-h) + 48px) 24px 38px; background: var(--ink);
+    }
+    .mobile-nav.is-open { display: flex; flex-direction: column; justify-content: space-between; }
+    .mobile-nav-links { display: grid; gap: 4px; }
+    .mobile-nav-link { padding: 5px 0; font: 500 clamp(2.5rem, 13vw, 4.6rem)/1 var(--display); }
+    .mobile-nav-meta {
+      padding-top: 28px; border-top: 1px solid var(--line-dark); color: var(--muted);
+      font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+    }
+
+    /* Shared */
+    .section { position: relative; padding: clamp(88px, 11vw, 160px) 0; }
+    .section-inner { width: var(--content); margin: auto; }
+    .light-section { background: var(--ivory); color: var(--ink); }
+    .eyebrow {
+      display: flex; align-items: center; gap: 12px; margin: 0 0 20px; color: var(--gold);
+      font-size: .66rem; font-weight: 600; letter-spacing: .18em; line-height: 1.4; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 34px; height: 1px; background: currentColor; }
+    .light-section .eyebrow { color: var(--oxblood); }
+    .display-title {
+      max-width: 900px; margin: 0; font: 500 clamp(3rem, 6.6vw, 7.2rem)/.92 var(--display);
+      letter-spacing: -.04em;
+    }
+    .lead { max-width: 650px; margin: 30px 0 0; color: var(--muted); font-size: clamp(1rem, 1.4vw, 1.18rem); }
+    .light-section .lead { color: rgba(9, 9, 8, .72); }
+    .button {
+      min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 13px 21px; border: 1px solid transparent; border-radius: 999px; cursor: pointer;
+      font-size: .7rem; font-weight: 600; letter-spacing: .12em; line-height: 1.2;
+      text-align: center; text-transform: uppercase; transition: transform .18s, background .18s, border-color .18s;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button--light { background: var(--ivory); color: var(--ink); }
+    .button--dark { background: var(--ink); color: var(--ivory); }
+    .button--outline { border-color: rgba(245, 240, 232, .5); background: transparent; color: var(--ivory); }
+    .button--outline:hover { border-color: var(--ivory); }
+    .button--text { min-height: 44px; padding-inline: 0; border-radius: 0; border-bottom-color: currentColor; }
+    .button-arrow { font-size: 1.1rem; line-height: 1; transition: transform .18s; }
+    .button:hover .button-arrow { transform: translateX(4px); }
+
+    /* Hero */
+    .hero { position: relative; height: 180vh; min-height: 1000px; background: var(--ink); }
+    .hero-sticky { position: sticky; top: 0; height: 100svh; min-height: 680px; overflow: hidden; }
+    .hero-frame {
+      position: absolute; inset: 0; overflow: hidden; background: #3d2c28;
+      clip-path: inset(var(--hero-inset) round 24px); will-change: clip-path;
+    }
+    .hero-frame::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(9,9,8,.84), rgba(9,9,8,.5) 42%, rgba(9,9,8,.08) 74%),
+                  linear-gradient(0deg, rgba(9,9,8,.62), transparent 48%);
+    }
+    .hero-image {
+      width: 100%; height: 100%; object-fit: cover; object-position: center 32%;
+      transform: scale(var(--hero-scale)); filter: blur(var(--hero-blur)); will-change: transform, filter;
+    }
+    .hero-content {
+      position: absolute; z-index: 2; top: 50%;
+      left: max(20px, calc((100vw - min(1180px, calc(100vw - 40px))) / 2));
+      width: min(690px, calc(100vw - 40px));
+      transform: translateY(calc(-46% + var(--hero-copy-shift)));
+      opacity: var(--hero-copy-opacity); will-change: transform, opacity;
+    }
+    .hero-title {
+      max-width: 720px; margin: 0; font: 500 clamp(4.5rem, 10vw, 10rem)/.8 var(--display);
+      letter-spacing: -.06em; text-wrap: balance;
+    }
+    .hero-subhead { max-width: 590px; margin: 30px 0 0; font-size: clamp(1rem, 1.4vw, 1.2rem); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 34px; }
+    .hero-note { margin: 24px 0 0; color: var(--muted); font-size: .66rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+    .hero-finish {
+      position: absolute; z-index: 2;
+      right: max(24px, calc((100vw - min(1180px, calc(100vw - 40px))) / 2)); bottom: 7vh;
+      max-width: 390px; padding: 24px 0 0 38px; border-left: 1px solid rgba(245,240,232,.58);
+      opacity: var(--hero-finish-opacity); will-change: opacity;
+    }
+    .hero-finish strong { display: block; font: 500 clamp(2rem, 3.4vw, 3.8rem)/.95 var(--display); }
+    .hero-finish span { display: block; margin-top: 12px; color: var(--muted); font-size: .65rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+    .scroll-cue {
+      position: absolute; z-index: 3; right: 24px; bottom: 24px; display: flex; align-items: center;
+      gap: 10px; color: rgba(245,240,232,.72); font-size: .6rem; font-weight: 600;
+      letter-spacing: .16em; text-transform: uppercase; writing-mode: vertical-rl;
+    }
+    .scroll-cue::after {
+      content: ""; width: 1px; height: 48px; background: linear-gradient(var(--gold) 50%, rgba(245,240,232,.22) 50%);
+      background-size: 100% 200%; animation: cue 1.8s ease-in-out infinite;
+    }
+    @keyframes cue { from { background-position: 0 100%; } to { background-position: 0 -100%; } }
+
+    /* Cinematic cultural-events feature */
+    .motion-feature {
+      position: relative; min-height: min(920px, 100svh); display: grid; align-items: end;
+      overflow: hidden; isolation: isolate; background: #e9e6e0; color: var(--ivory);
+    }
+    .motion-video {
+      position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; object-position: center; background: #e9e6e0;
+    }
+    .motion-feature::after {
+      content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none;
+      background: linear-gradient(0deg, rgba(9,9,8,.9), rgba(9,9,8,.1) 72%),
+                  linear-gradient(90deg, rgba(9,9,8,.48), transparent 62%);
+    }
+    .motion-content { width: var(--content); margin: auto; padding: clamp(90px,12vw,150px) 0 70px; }
+    .motion-title {
+      max-width: 760px; margin: 0; font: 500 clamp(4rem,9vw,9rem)/.82 var(--display);
+      letter-spacing: -.055em; text-wrap: balance;
+    }
+    .motion-body { max-width: 620px; margin: 28px 0 0; color: rgba(245,240,232,.82); }
+    .motion-meta {
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+      margin-top: 46px; padding-top: 18px; border-top: 1px solid rgba(245,240,232,.32);
+    }
+    .motion-credit { margin: 0; font-size: .62rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
+    .motion-toggle {
+      min-width: 118px; min-height: 46px; padding: 10px 16px; border: 1px solid rgba(245,240,232,.5);
+      border-radius: 999px; background: rgba(9,9,8,.28); color: var(--ivory); cursor: pointer;
+      font-size: .62rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+      -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+    }
+    .motion-toggle:hover { background: rgba(9,9,8,.62); border-color: var(--ivory); }
+    .no-js .motion-toggle { display: none; }
+
+    /* Services */
+    .split-header {
+      display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .65fr);
+      align-items: end; gap: 60px; margin-bottom: clamp(54px, 7vw, 90px);
+    }
+    .split-header .lead { margin: 0; }
+    .service-list { border-top: 1px solid var(--line-light); }
+    .service-card {
+      display: grid; grid-template-columns: 72px minmax(180px,.7fr) minmax(280px,1fr) 260px;
+      align-items: center; gap: 30px; min-height: 190px; padding: 24px 0; border-bottom: 1px solid var(--line-light);
+    }
+    .service-number { align-self: start; padding-top: 10px; color: var(--oxblood); font-size: .64rem; font-weight: 600; letter-spacing: .12em; }
+    .service-title { margin: 0; font: 500 clamp(2rem, 3.5vw, 4rem)/.95 var(--display); letter-spacing: -.035em; }
+    .service-description { margin: 0; color: rgba(9,9,8,.69); font-size: .92rem; }
+    .service-image-wrap { height: 142px; overflow: hidden; background: #d9d1c7; }
+    .service-image { width: 100%; height: 100%; object-fit: cover; filter: saturate(.82); transition: transform .5s, filter .3s; }
+    .service-card:hover .service-image { transform: scale(1.07); filter: saturate(1); }
+    .service-footer { display: flex; align-items: center; justify-content: space-between; gap: 36px; margin-top: 42px; }
+    .service-price-note { max-width: 670px; margin: 0; color: rgba(9,9,8,.72); font-size: .86rem; }
+
+    /* Work */
+    .work { overflow: hidden; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 58px; gap: 16px; }
+    .gallery-item {
+      position: relative; grid-column: span 4; grid-row: span 7; min-height: 330px;
+      overflow: hidden; padding: 0; border: 0; background: var(--ink-soft); cursor: zoom-in; text-align: left;
+    }
+    .gallery-item--tall { grid-row: span 10; }
+    .gallery-item--wide { grid-column: span 8; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s; }
+    .gallery-item::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(9,9,8,.75), transparent 42%); opacity: .65; transition: opacity .25s; }
+    .gallery-item:hover img { transform: scale(1.035); }
+    .gallery-item:hover::after { opacity: 1; }
+    .gallery-label {
+      position: absolute; z-index: 1; inset: auto 18px 16px; display: flex; justify-content: space-between;
+      color: var(--ivory); font-size: .63rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
+    }
+    .gallery-label::after { content: "+"; font-size: 1.2rem; font-weight: 400; }
+    .work-footer { display: flex; justify-content: flex-end; margin-top: 42px; }
+
+    /* Story and proof */
+    .story-grid {
+      display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr);
+      gap: clamp(50px,9vw,130px); align-items: center;
+    }
+    .story-image-wrap { position: relative; min-height: 700px; overflow: hidden; background: #d8d0c7; }
+    .story-image-wrap::after { content: ""; position: absolute; inset: 18px; border: 1px solid rgba(245,240,232,.58); pointer-events: none; }
+    .story-image { width: 100%; height: 100%; min-height: 700px; object-fit: cover; object-position: 42% center; }
+    .story-copy .display-title, .location-copy .display-title { font-size: clamp(3.2rem, 6vw, 6.6rem); }
+    .story-copy-text { max-width: 600px; margin-top: 34px; color: rgba(9,9,8,.72); }
+    .story-copy-text p { margin: 0; }
+    .story-copy-text p + p { margin-top: 18px; }
+    .process-list { margin-top: 48px; border-top: 1px solid var(--line-light); }
+    .process-step { display: grid; grid-template-columns: 54px minmax(0,.7fr) minmax(0,1fr); gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--line-light); }
+    .process-number { color: var(--oxblood); font-size: .64rem; font-weight: 600; }
+    .process-title { margin: 0; font-size: .75rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; }
+    .process-text { margin: 0; color: rgba(9,9,8,.64); font-size: .84rem; }
+    .proof[hidden] { display: none; }
+    .proof-header { max-width: 860px; }
+    .testimonial-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 70px; background: var(--line-dark); border: 1px solid var(--line-dark); }
+    .testimonial { min-height: 330px; padding: clamp(28px,4vw,48px); background: var(--ink); }
+    .testimonial-mark { color: var(--gold); font: 500 4rem/.7 var(--display); }
+    .testimonial-quote { margin: 28px 0 38px; font: 500 clamp(1.35rem,2vw,1.8rem)/1.25 var(--display); }
+    .testimonial-name { margin: 0; font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+    .testimonial-detail { display: block; margin-top: 6px; color: var(--muted); font-size: .7rem; }
+
+    /* Location */
+    .location-grid { display: grid; grid-template-columns: minmax(0,.8fr) minmax(420px,1.2fr); gap: clamp(54px,8vw,110px); align-items: center; }
+    .location-body { max-width: 590px; margin: 30px 0 0; color: var(--muted); }
+    .detail-list { margin-top: 42px; border-top: 1px solid var(--line-dark); }
+    .detail-row { display: grid; grid-template-columns: 132px 1fr; gap: 20px; padding: 15px 0; border-bottom: 1px solid var(--line-dark); }
+    .detail-term { color: var(--muted); font-size: .63rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+    .detail-value { font: 500 1.25rem/1.2 var(--display); }
+    .map-frame { position: relative; min-height: 620px; overflow: hidden; background: #e4ded6; }
+    .map-frame iframe { width: 100%; height: 620px; display: block; border: 0; }
+    .map-caption { position: absolute; inset: auto 20px 20px; margin: 0; padding: 14px 17px; background: rgba(9,9,8,.91); font-size: .67rem; letter-spacing: .08em; }
+
+    /* Availability calendar */
+    .availability-section { background: #151412; }
+    .availability-grid {
+      display: grid; grid-template-columns: minmax(0,.8fr) minmax(520px,1fr);
+      gap: clamp(52px,9vw,130px); align-items: center;
+    }
+    .availability-copy .display-title { font-size: clamp(3.4rem,6.4vw,7rem); }
+    .availability-body { max-width: 560px; margin: 30px 0 0; color: var(--muted); }
+    .availability-note {
+      max-width: 560px; margin: 34px 0 0; padding: 19px 0 0 24px;
+      border-left: 1px solid var(--gold); color: rgba(245,240,232,.62); font-size: .75rem;
+    }
+    .availability-legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 36px; }
+    .legend-item { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; }
+    .legend-dot { width: 9px; height: 9px; border: 1px solid rgba(245,240,232,.5); border-radius: 50%; }
+    .legend-dot--available { background: var(--ivory); }
+    .legend-dot--booked { border-color: var(--oxblood); background: var(--oxblood); }
+    .calendar-card { padding: clamp(22px,3.8vw,44px); background: var(--ivory); color: var(--ink); box-shadow: 0 30px 80px rgba(0,0,0,.22); }
+    .calendar-toolbar { display: grid; grid-template-columns: 48px 1fr 48px; gap: 12px; align-items: center; }
+    .calendar-month { margin: 0; font: 500 clamp(1.9rem,3vw,2.8rem)/1 var(--display); text-align: center; }
+    .calendar-nav {
+      width: 48px; height: 48px; display: grid; place-items: center; padding: 0;
+      border: 1px solid rgba(9,9,8,.25); border-radius: 50%; background: transparent; color: var(--ink);
+      cursor: pointer; font-size: 1.2rem;
+    }
+    .calendar-nav:hover { border-color: var(--ink); background: var(--ink); color: var(--ivory); }
+    .calendar-nav:disabled { cursor: not-allowed; opacity: .28; background: transparent; color: var(--ink); }
+    .calendar-weekdays, .calendar-days { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 6px; }
+    .calendar-weekdays { margin-top: 30px; padding-bottom: 10px; border-bottom: 1px solid var(--line-light); }
+    .calendar-weekday { color: rgba(9,9,8,.48); font-size: .58rem; font-weight: 600; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
+    .calendar-days { margin-top: 12px; }
+    .calendar-day {
+      aspect-ratio: 1; min-width: 0; display: grid; place-items: center; padding: 0;
+      border: 1px solid transparent; border-radius: 50%; background: transparent; color: var(--ink);
+      cursor: pointer; font-size: .76rem; transition: background .16s, color .16s, border-color .16s, transform .16s;
+    }
+    .calendar-day:not(:disabled):hover { border-color: var(--ink); transform: scale(1.04); }
+    .calendar-day.is-available { background: rgba(9,9,8,.055); }
+    .calendar-day.is-booked { background: var(--oxblood); color: var(--ivory); }
+    .calendar-day.is-selected { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
+    .calendar-day.is-past { cursor: not-allowed; color: rgba(9,9,8,.28); text-decoration: line-through; }
+    .calendar-empty { aspect-ratio: 1; }
+    .calendar-result { min-height: 114px; margin-top: 28px; padding-top: 23px; border-top: 1px solid var(--line-light); }
+    .calendar-result-kicker { margin: 0; color: rgba(9,9,8,.48); font-size: .59rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+    .calendar-result-title { margin: 7px 0 0; font: 500 clamp(1.5rem,2.8vw,2.3rem)/1.05 var(--display); }
+    .calendar-result-copy { margin: 9px 0 0; color: rgba(9,9,8,.64); font-size: .75rem; }
+    .calendar-result.is-available .calendar-result-kicker { color: #245c41; }
+    .calendar-result.is-booked .calendar-result-kicker { color: var(--oxblood); }
+    .calendar-continue { margin-top: 20px; }
+    .calendar-continue[hidden] { display: none; }
+
+    /* Enquiry */
+    .enquiry-grid { display: grid; grid-template-columns: minmax(0,.75fr) minmax(420px,1fr); gap: clamp(50px,10vw,150px); align-items: start; }
+    .enquiry-copy { position: sticky; top: 120px; }
+    .enquiry-copy .display-title { font-size: clamp(3.4rem,6.5vw,7.2rem); }
+    .enquiry-body { max-width: 510px; margin: 30px 0 0; color: rgba(9,9,8,.7); }
+    .booking-note { max-width: 510px; margin: 36px 0 0; padding: 20px 0 0 24px; border-left: 2px solid var(--oxblood); color: rgba(9,9,8,.69); font-size: .77rem; }
+    .enquiry-form { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px 18px; }
+    .field { display: grid; gap: 8px; }
+    .field--full { grid-column: 1 / -1; }
+    .field label { color: rgba(9,9,8,.72); font-size: .63rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+    .field input, .field select, .field textarea {
+      width: 100%; min-height: 54px; padding: 13px 0; border: 0; border-bottom: 1px solid rgba(9,9,8,.34);
+      border-radius: 0; outline: 0; background: transparent; color: var(--ink); transition: border-color .18s;
+    }
+    .field textarea { min-height: 130px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--oxblood); }
+    .field input::placeholder, .field textarea::placeholder { color: rgba(9,9,8,.42); }
+    .form-footer { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 14px; }
+    .form-status { min-height: 24px; margin: 0; color: rgba(9,9,8,.75); font-size: .77rem; }
+    .form-status.is-error { color: #8c2031; }
+    .form-status.is-success { color: #245c41; }
+    .button[disabled] { cursor: wait; opacity: .68; transform: none; }
+
+    /* Newsletter and footer */
+    .newsletter { padding: clamp(70px,8vw,110px) 0; background: var(--oxblood); }
+    .newsletter-inner { width: var(--content); margin: auto; display: grid; grid-template-columns: minmax(0,1fr) minmax(360px,.8fr); gap: clamp(48px,9vw,130px); align-items: end; }
+    .newsletter .eyebrow { color: #e8bd7d; }
+    .newsletter-title { max-width: 650px; margin: 0; font: 500 clamp(3rem,5.4vw,6rem)/.92 var(--display); letter-spacing: -.04em; }
+    .newsletter-body { max-width: 560px; margin: 24px 0 0; color: rgba(245,240,232,.78); }
+    .newsletter-form-row { display: flex; gap: 10px; }
+    .newsletter-form input {
+      width: 100%; min-height: 52px; padding: 12px 16px; border: 1px solid rgba(245,240,232,.48);
+      border-radius: 999px; outline: 0; background: transparent; color: var(--ivory);
+    }
+    .newsletter-form input::placeholder { color: rgba(245,240,232,.66); }
+    .newsletter-form input:focus { border-color: var(--ivory); }
+    .newsletter-consent, .newsletter-status { margin: 12px 0 0; color: rgba(245,240,232,.68); font-size: .67rem; }
+    .newsletter-status { min-height: 18px; }
+    .site-footer { padding: 64px 0 30px; background: var(--ink); }
+    .footer-inner { width: var(--content); margin: auto; }
+    .footer-top { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; padding-bottom: 46px; }
+    .footer-brand { display: inline-flex; align-items: center; gap: 16px; }
+    .footer-brand img { width: 74px; height: 74px; filter: brightness(0) invert(1); }
+    .footer-name { display: block; font: 500 clamp(2.2rem,4vw,4.4rem)/.9 var(--display); }
+    .footer-voice { display: block; margin-top: 10px; color: var(--muted); font-size: .7rem; letter-spacing: .07em; }
+    .footer-action { font: 500 clamp(1.6rem,2.6vw,2.8rem)/1 var(--display); border-bottom: 1px solid rgba(245,240,232,.48); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 28px; padding-top: 24px; border-top: 1px solid var(--line-dark); color: var(--muted); font-size: .63rem; letter-spacing: .08em; text-transform: uppercase; }
+
+    /* Lightbox and reveal */
+    .lightbox { width: min(1100px,calc(100vw - 32px)); max-width: none; height: min(88vh,900px); max-height: none; padding: 0; border: 0; background: transparent; color: var(--ivory); }
+    .lightbox::backdrop { background: rgba(0,0,0,.9); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+    .lightbox-inner { position: relative; width: 100%; height: 100%; display: grid; grid-template-rows: minmax(0,1fr) auto; gap: 12px; }
+    .lightbox-image { width: 100%; height: 100%; object-fit: contain; }
+    .lightbox-caption { margin: 0; text-align: center; font-size: .67rem; letter-spacing: .14em; text-transform: uppercase; }
+    .lightbox-close { position: absolute; z-index: 2; top: 12px; right: 12px; width: 48px; height: 48px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(245,240,232,.5); border-radius: 50%; background: rgba(9,9,8,.78); cursor: pointer; font-size: 1.25rem; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .72s, transform .72s cubic-bezier(.2,.7,.2,1); }
+    .reveal.is-visible, .no-js .reveal { opacity: 1; transform: none; }
+
+    @media (max-width: 1040px) {
+      .desktop-nav .nav-link { display: none; }
+      .service-card { grid-template-columns: 55px minmax(180px,.65fr) minmax(250px,1fr); }
+      .service-image-wrap { grid-column: 2 / -1; height: 240px; }
+      .story-grid, .location-grid, .availability-grid, .enquiry-grid { grid-template-columns: 1fr; }
+      .story-image-wrap, .story-image { min-height: 620px; }
+      .story-image-wrap { width: min(760px,100%); }
+      .location-copy { max-width: 720px; }
+      .map-frame, .map-frame iframe { min-height: 500px; height: 500px; }
+      .availability-copy { max-width: 720px; }
+      .calendar-card { width: min(680px,100%); }
+      .enquiry-copy { position: static; }
+    }
+    @media (max-width: 780px) {
+      :root { --content: min(calc(100% - 32px),650px); --header-h: 72px; }
+      .site-header.is-scrolled, .site-header.is-menu-open { height: 66px; }
+      .desktop-nav { display: none; }
+      .menu-toggle { display: grid; }
+      .brand img { width: 50px; height: 50px; }
+      .brand-descriptor { display: none; }
+      .section { padding: 84px 0; }
+      .hero { height: 130svh; min-height: 820px; }
+      .hero-sticky { min-height: 600px; }
+      .hero-frame { clip-path: inset(var(--hero-inset) round 16px); }
+      .hero-frame::after { background: linear-gradient(0deg,rgba(9,9,8,.92),rgba(9,9,8,.25) 66%), linear-gradient(90deg,rgba(9,9,8,.25),transparent); }
+      .hero-image { object-position: 56% 28%; }
+      .hero-content { top: auto; bottom: 78px; left: 16px; width: calc(100vw - 32px); transform: translateY(var(--hero-copy-shift)); }
+      .hero-title { font-size: clamp(4.2rem,22vw,7.8rem); }
+      .hero-subhead { margin-top: 22px; font-size: .94rem; overflow-wrap: anywhere; }
+      .hero-actions { margin-top: 26px; flex-direction: column; align-items: stretch; }
+      .hero-actions .button { width: 100%; flex: 0 0 auto; }
+      .hero-note, .scroll-cue { display: none; }
+      .hero-finish { inset: auto 32px 60px; padding-left: 24px; }
+      .motion-feature { min-height: 78svh; }
+      .motion-video { object-position: center; }
+      .motion-content { padding-bottom: 34px; }
+      .motion-body { font-size: .88rem; }
+      .motion-meta { align-items: flex-start; flex-direction: column; margin-top: 32px; }
+      .split-header { grid-template-columns: 1fr; gap: 28px; }
+      .split-header .lead { margin: 0; }
+      .service-card { grid-template-columns: 42px 1fr; gap: 18px; padding: 26px 0; }
+      .service-number { grid-row: 1 / span 2; }
+      .service-description { grid-column: 2; }
+      .service-image-wrap { grid-column: 1 / -1; height: 230px; }
+      .service-footer { align-items: flex-start; flex-direction: column; }
+      .gallery-grid { grid-template-columns: repeat(2,minmax(0,1fr)); grid-auto-rows: 180px; gap: 10px; }
+      .gallery-item, .gallery-item--wide { grid-column: span 1; grid-row: span 2; min-height: 0; }
+      .gallery-item--tall { grid-row: span 3; }
+      .gallery-item:nth-child(3n) { grid-column: 1 / -1; }
+      .story-image-wrap, .story-image { min-height: 500px; }
+      .process-step { grid-template-columns: 38px 1fr; }
+      .process-text { grid-column: 2; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .detail-row { grid-template-columns: 112px 1fr; }
+      .map-frame, .map-frame iframe { min-height: 420px; height: 420px; }
+      .availability-grid { gap: 44px; }
+      .calendar-card { padding: 24px 16px; }
+      .calendar-weekdays, .calendar-days { gap: 4px; }
+      .enquiry-form { grid-template-columns: 1fr; }
+      .field, .field--full { grid-column: 1; }
+      .form-footer { align-items: stretch; flex-direction: column; }
+      .form-footer .button { width: 100%; }
+      .newsletter-inner { grid-template-columns: 1fr; gap: 38px; }
+      .newsletter-form-row { flex-direction: column; }
+      .newsletter-form-row .button { width: 100%; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-action { justify-self: start; }
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: auto; }
+      .gallery-item, .gallery-item--wide, .gallery-item--tall, .gallery-item:nth-child(3n) {
+        grid-column: 1; grid-row: auto; height: 72vw; min-height: 290px;
+      }
+      .gallery-item--tall { height: 118vw; }
+      .story-image-wrap, .story-image { min-height: 430px; }
+      .map-frame, .map-frame iframe { min-height: 360px; height: 360px; }
+      .calendar-toolbar { grid-template-columns: 44px 1fr 44px; }
+      .calendar-nav { width: 44px; height: 44px; }
+      .calendar-day { font-size: .7rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+      .hero { height: 100svh; min-height: 680px; }
+      .hero-sticky { position: relative; }
+      .hero-frame { clip-path: none; }
+      .hero-image { transform: none; filter: none; }
+      .hero-content { opacity: 1; transform: translateY(-46%); }
+      .hero-finish { display: none; }
+      .motion-video { display: none; }
+      .motion-feature { background: #27231f url("assets/car-cultural-poster.webp") center/cover no-repeat; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="no-js">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="KGMedia home">
+        <img src="assets/kgmedia-logo.png" alt="" width="56" height="56">
+        <span class="brand-text">
+          <span class="brand-name" data-copy="brand.name">KGMedia</span>
+          <span class="brand-descriptor" data-copy="brand.descriptor">Photography · Ottawa + Beyond</span>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#approach">Approach</a>
+        <a class="nav-link" href="#ottawa">Location</a>
+        <a class="button button--outline" href="#availability">Check your date <span class="button-arrow" aria-hidden="true">→</span></a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+      <div class="mobile-nav-links">
+        <a class="mobile-nav-link" href="#work">Work</a>
+        <a class="mobile-nav-link" href="#services">Services</a>
+        <a class="mobile-nav-link" href="#approach">Approach</a>
+        <a class="mobile-nav-link" href="#ottawa">Location</a>
+        <a class="mobile-nav-link" href="#availability">Check your date</a>
+      </div>
+      <p class="mobile-nav-meta"><span data-copy="business.serviceArea">Ottawa and beyond</span> · <span data-copy="business.hours">By appointment</span></p>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-sticky">
+        <div class="hero-frame" aria-hidden="true">
+          <img class="hero-image" src="assets/hero-wedding.webp" alt="" width="1280" height="1920">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow" data-copy="hero.eyebrow">Ottawa · Available to travel</p>
+          <h1 class="hero-title" id="hero-title" data-copy="hero.headline">Keep the feeling.</h1>
+          <p class="hero-subhead" data-copy="hero.subhead">Emotion-led photography for weddings, cultural celebrations, portraits and brands—created in Ottawa and wherever your story takes us.</p>
+          <div class="hero-actions">
+            <a class="button button--light" href="#enquire"><span data-copy="hero.primaryAction">Tell us what you’re planning</span> <span class="button-arrow" aria-hidden="true">→</span></a>
+            <a class="button button--outline" href="#work" data-copy="hero.secondaryAction">View selected work</a>
+          </div>
+          <p class="hero-note" data-copy="hero.note">Sessions from $90 · Delivery in 48–72 hours</p>
+        </div>
+        <div class="hero-finish" aria-hidden="true">
+          <strong>Keep the feeling.</strong>
+          <span>KGMedia · Ottawa + Beyond</span>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">Scroll</div>
+      </div>
+    </section>
+
+    <section class="motion-feature" id="culture" aria-labelledby="motion-title">
+      <video class="motion-video" id="motion-video" muted loop playsinline preload="metadata" poster="assets/car-cultural-poster.webp" aria-label="Animated study of a red Italian performance car">
+        <source src="assets/car-cultural-event.mp4" type="video/mp4">
+      </video>
+      <div class="motion-content reveal">
+        <p class="eyebrow" data-copy="motionFeature.eyebrow">Automotive culture · Italian car showcase</p>
+        <h2 class="motion-title" id="motion-title" data-copy="motionFeature.headline">Culture, in motion.</h2>
+        <p class="motion-body" data-copy="motionFeature.body">The design, energy and people around a remarkable machine are part of the story too. KGMedia photographs cultural gatherings and automotive experiences with the same attention to atmosphere and detail.</p>
+        <div class="motion-meta">
+          <p class="motion-credit" data-copy="motionFeature.credit">KGMedia motion study · Ottawa</p>
+          <button class="motion-toggle" id="motion-toggle" type="button" aria-controls="motion-video">Pause film</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section" id="services" aria-labelledby="services-title">
+      <div class="section-inner">
+        <div class="split-header reveal">
+          <div>
+            <p class="eyebrow" data-copy="servicesSection.eyebrow">What we photograph</p>
+            <h2 class="display-title" id="services-title" data-copy="servicesSection.headline">Every story has its own rhythm.</h2>
+          </div>
+          <p class="lead" data-copy="servicesSection.intro">From quiet portraits to rooms alive with tradition, KGMedia photographs what matters without pulling you out of the moment.</p>
+        </div>
+        <div class="service-list" id="service-list" aria-label="Photography services"></div>
+        <div class="service-footer reveal">
+          <p class="service-price-note" data-copy="servicesSection.priceNote">Portrait and creative sessions begin at $90. Wedding, event, commercial and travel coverage is quoted according to date, duration and location.</p>
+          <a class="button button--dark" href="#enquire"><span data-copy="servicesSection.action">Request a tailored quote</span> <span class="button-arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="section-inner">
+        <div class="split-header reveal">
+          <div>
+            <p class="eyebrow" data-copy="workSection.eyebrow">Selected work</p>
+            <h2 class="display-title" id="work-title" data-copy="workSection.headline">Stories, not categories.</h2>
+          </div>
+          <p class="lead" data-copy="workSection.intro">A celebration can be intimate, electric, ceremonial or completely unexpected. The thread is always the same: honest connection, carefully seen.</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid" aria-label="Selected photography"></div>
+        <div class="work-footer reveal">
+          <a class="button button--text" href="#enquire"><span data-copy="workSection.action">Have something different in mind? Tell us about it.</span> <span class="button-arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section" id="approach" aria-labelledby="approach-title">
+      <div class="section-inner story-grid">
+        <div class="story-image-wrap reveal">
+          <img class="story-image" src="assets/portrait-maternity.webp" alt="Expectant mother standing beside a softly lit window" width="1200" height="800" loading="lazy" decoding="async">
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow" data-copy="story.eyebrow">The approach</p>
+          <h2 class="display-title" id="approach-title" data-copy="story.headline">Present for the meaning. Ready for the moment.</h2>
+          <div class="story-copy-text">
+            <p data-copy="story.paragraphOne">Every gathering has a language of its own—the gestures people recognize, the traditions they carry and the relationships that need no explanation. KGMedia approaches each assignment by listening first, then photographing with intention.</p>
+            <p data-copy="story.paragraphTwo">You will receive direction when it helps and space when the moment should unfold on its own. The result is a collection that feels polished without losing the life inside it.</p>
+          </div>
+          <div class="process-list" id="process-list" aria-label="Our process"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hidden automatically until verified reviews are added in EDITABLE SITE CONTENT. -->
+    <section class="section proof" id="proof" aria-labelledby="proof-title" hidden>
+      <div class="section-inner">
+        <div class="proof-header reveal">
+          <p class="eyebrow" data-copy="proof.eyebrow">Client words</p>
+          <h2 class="display-title" id="proof-title" data-copy="proof.headline">The photographs matter. So does how it felt making them.</h2>
+          <p class="lead" data-copy="proof.intro">The best client stories speak to both: images they value and an experience that let them remain present.</p>
+        </div>
+        <div class="testimonial-grid" id="testimonial-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="ottawa" aria-labelledby="location-title">
+      <div class="section-inner location-grid">
+        <div class="location-copy reveal">
+          <p class="eyebrow" data-copy="locationSection.eyebrow">Ottawa + travel</p>
+          <h2 class="display-title" id="location-title" data-copy="locationSection.headline">Based in Ottawa. Ready to follow the story.</h2>
+          <p class="location-body" data-copy="locationSection.body">Sessions are scheduled by request throughout Ottawa and the surrounding region, with travel available. Share your date and location, and KGMedia will confirm availability and prepare the right coverage.</p>
+          <div class="detail-list" aria-label="Business details">
+            <div class="detail-row"><span class="detail-term">Hours</span><span class="detail-value" data-copy="business.hours">By appointment</span></div>
+            <div class="detail-row"><span class="detail-term">Service area</span><span class="detail-value" data-copy="business.serviceArea">Ottawa and beyond</span></div>
+            <div class="detail-row"><span class="detail-term">Starting at</span><span class="detail-value" data-copy="business.startingPrice">$90 per session</span></div>
+            <div class="detail-row"><span class="detail-term">Delivery</span><span class="detail-value" data-copy="business.delivery">48–72 hours unless otherwise agreed</span></div>
+          </div>
+        </div>
+        <!-- MAP: GOOGLE MAPS START -->
+        <div class="map-frame reveal">
+          <iframe id="service-map" title="Map showing KGMedia's Ottawa service area" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <p class="map-caption" data-copy="locationSection.mapCaption">Serving Ottawa, surrounding communities and destination clients.</p>
+        </div>
+        <!-- MAP: GOOGLE MAPS END -->
+      </div>
+    </section>
+
+    <section class="section availability-section" id="availability" aria-labelledby="availability-title">
+      <div class="section-inner availability-grid">
+        <div class="availability-copy reveal">
+          <p class="eyebrow" data-copy="availability.eyebrow">Availability</p>
+          <h2 class="display-title" id="availability-title" data-copy="availability.headline">Is your date still open?</h2>
+          <p class="availability-body" data-copy="availability.body">Choose a date to see its current status. Open dates can be carried directly into your enquiry.</p>
+          <div class="availability-legend" aria-label="Calendar legend">
+            <span class="legend-item"><span class="legend-dot legend-dot--available" aria-hidden="true"></span>Available</span>
+            <span class="legend-item"><span class="legend-dot legend-dot--booked" aria-hidden="true"></span>Booked</span>
+          </div>
+          <p class="availability-note" data-copy="availability.note">This calendar is a planning guide and is updated as bookings are confirmed. Your date is secured only after written confirmation and receipt of the required e-transfer deposit.</p>
+        </div>
+
+        <div class="calendar-card reveal">
+          <div class="calendar-toolbar">
+            <button class="calendar-nav" id="calendar-previous" type="button" aria-label="Show previous month">←</button>
+            <h3 class="calendar-month" id="calendar-month" aria-live="polite"></h3>
+            <button class="calendar-nav" id="calendar-next" type="button" aria-label="Show next month">→</button>
+          </div>
+          <div class="calendar-weekdays" aria-hidden="true">
+            <span class="calendar-weekday">Sun</span><span class="calendar-weekday">Mon</span><span class="calendar-weekday">Tue</span><span class="calendar-weekday">Wed</span><span class="calendar-weekday">Thu</span><span class="calendar-weekday">Fri</span><span class="calendar-weekday">Sat</span>
+          </div>
+          <div class="calendar-days" id="calendar-days" role="grid" aria-labelledby="calendar-month"></div>
+          <div class="calendar-result" id="calendar-result" role="status" aria-live="polite">
+            <p class="calendar-result-kicker" id="calendar-result-kicker">Choose a date</p>
+            <p class="calendar-result-title" id="calendar-result-title">Select any future day.</p>
+            <p class="calendar-result-copy" id="calendar-result-copy">Its current booking status will appear here.</p>
+            <a class="button button--dark calendar-continue" id="calendar-continue" href="#enquire" hidden>Continue with this date <span class="button-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section" id="enquire" aria-labelledby="enquiry-title">
+      <div class="section-inner enquiry-grid">
+        <div class="enquiry-copy reveal">
+          <p class="eyebrow" data-copy="enquiry.eyebrow">Start a conversation</p>
+          <h2 class="display-title" id="enquiry-title" data-copy="enquiry.headline">Tell us what you want to remember.</h2>
+          <p class="enquiry-body" data-copy="enquiry.body">Share a few details about your date, location and vision. You will receive an email response with availability, next steps and a tailored quote where needed.</p>
+          <p class="booking-note" data-copy="enquiry.policy">Submitting this form is an enquiry, not a confirmed booking. A booking is secured only after written confirmation and receipt of the required e-transfer deposit.</p>
+        </div>
+
+        <!-- CONTACT FORM: FORMSPREE START -->
+        <form class="enquiry-form reveal" id="enquiry-form" method="post">
+          <input type="hidden" name="_subject" value="New KGMedia photography request">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+          <div class="field">
+            <label for="client-name">Your name</label>
+            <input id="client-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="client-email">Email address</label>
+            <input id="client-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="service-type">Type of photography</label>
+            <select id="service-type" name="service" required>
+              <option value="" selected disabled>Select a service</option>
+              <option>Wedding</option>
+              <option>Cultural event</option>
+              <option>Celebration</option>
+              <option>Portrait or modelling</option>
+              <option>Business photography</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="preferred-date">Preferred date</label>
+            <input id="preferred-date" name="preferred_date" type="date">
+          </div>
+          <div class="field">
+            <label for="shoot-location">Location</label>
+            <input id="shoot-location" name="location" type="text" autocomplete="address-level2" placeholder="Venue, neighbourhood or city">
+          </div>
+          <div class="field">
+            <label for="coverage">Estimated coverage</label>
+            <input id="coverage" name="coverage" type="text" placeholder="For example: 2 hours">
+          </div>
+          <div class="field field--full">
+            <label for="project-details">Tell us about the people, occasion or idea</label>
+            <textarea id="project-details" name="message" required placeholder="What are you planning, and what matters most to you?"></textarea>
+          </div>
+          <div class="field field--full">
+            <label for="referral">How did you hear about KGMedia?</label>
+            <input id="referral" name="referral_source" type="text">
+          </div>
+          <div class="form-footer">
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="button button--dark" id="form-submit" type="submit">
+              <span data-copy="enquiry.submit">Send my request</span><span class="button-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </form>
+        <!-- CONTACT FORM: FORMSPREE END -->
+      </div>
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter-inner">
+        <div class="reveal">
+          <p class="eyebrow" data-copy="newsletter.eyebrow">Stay close</p>
+          <h2 class="newsletter-title" id="newsletter-title" data-copy="newsletter.headline">A little beauty in your inbox.</h2>
+          <p class="newsletter-body" data-copy="newsletter.body">Receive occasional new stories, seasonal session openings and practical ideas for feeling at ease in front of the camera.</p>
+        </div>
+        <!-- NEWSLETTER: KIT START -->
+        <!-- If Kit supplies a full embed, replace only this form with that embed. -->
+        <form class="newsletter-form reveal" id="newsletter-form" method="post" target="_blank">
+          <div class="newsletter-form-row">
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input id="newsletter-email" name="email_address" type="email" autocomplete="email" placeholder="Email address" required>
+            <button class="button button--light" type="submit" data-copy="newsletter.submit">Join the list</button>
+          </div>
+          <p class="newsletter-consent" data-copy="newsletter.consent">By subscribing, you agree to receive KGMedia email updates. You can unsubscribe at any time.</p>
+          <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+        </form>
+        <!-- NEWSLETTER: KIT END -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/kgmedia-logo.png" alt="" width="74" height="74" loading="lazy">
+          <span>
+            <span class="footer-name" data-copy="brand.name">KGMedia</span>
+            <span class="footer-voice" data-copy="brand.voiceLine">Emotion-led photography in Ottawa and beyond.</span>
+          </span>
+        </div>
+        <a class="footer-action" href="#availability">Check your date →</a>
+      </div>
+      <div class="footer-bottom">
+        <span data-copy="footer.services">Weddings · Cultural events · Celebrations · Portraits · Business</span>
+        <span>© <span id="copyright-year"></span> <span data-copy="footer.copyright">KGMedia. All rights reserved.</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Expanded photograph">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" type="button" aria-label="Close photograph">×</button>
+      <img class="lightbox-image" id="lightbox-image" src="" alt="">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </dialog>
+
+  <noscript><div style="position:fixed;z-index:999;inset:auto 16px 16px;padding:14px 18px;background:#f5f0e8;color:#090908;font-family:system-ui,sans-serif">Enable JavaScript for the gallery, mobile navigation, and request form.</div></noscript>
+
+  <script>
+    (function () {
+      "use strict";
+      document.body.classList.remove("no-js");
+      var content = window.KGMEDIA_CONTENT;
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      function valueAt(path) {
+        return path.split(".").reduce(function (value, key) { return value && value[key]; }, content);
+      }
+      function applyCopy() {
+        document.querySelectorAll("[data-copy]").forEach(function (element) {
+          var value = valueAt(element.dataset.copy);
+          if (typeof value === "string") element.textContent = value;
+        });
+        document.title = content.seo.title;
+        document.querySelector('meta[name="description"]').content = content.seo.description;
+      }
+      function makeElement(tag, className, text) {
+        var element = document.createElement(tag);
+        if (className) element.className = className;
+        if (typeof text === "string") element.textContent = text;
+        return element;
+      }
+      function buildServices() {
+        var fragment = document.createDocumentFragment();
+        content.services.forEach(function (service) {
+          var card = makeElement("article", "service-card reveal");
+          var number = makeElement("span", "service-number", service.number);
+          var title = makeElement("h3", "service-title", service.name);
+          var description = makeElement("p", "service-description", service.description);
+          var wrap = makeElement("div", "service-image-wrap");
+          var image = makeElement("img", "service-image");
+          image.src = service.image; image.alt = service.alt; image.loading = "lazy"; image.decoding = "async";
+          wrap.appendChild(image); card.append(number, title, description, wrap); fragment.appendChild(card);
+        });
+        document.getElementById("service-list").replaceChildren(fragment);
+      }
+      function buildGallery() {
+        var fragment = document.createDocumentFragment();
+        content.gallery.forEach(function (item, index) {
+          var button = makeElement("button", "gallery-item reveal" + (item.size ? " gallery-item--" + item.size : ""));
+          button.type = "button"; button.dataset.galleryIndex = String(index);
+          button.setAttribute("aria-label", "Open " + item.category + " photograph");
+          var image = makeElement("img");
+          image.src = item.image; image.alt = item.alt; image.loading = "lazy"; image.decoding = "async";
+          button.append(image, makeElement("span", "gallery-label", item.category)); fragment.appendChild(button);
+        });
+        document.getElementById("gallery-grid").replaceChildren(fragment);
+      }
+      function buildProcess() {
+        var fragment = document.createDocumentFragment();
+        content.story.steps.forEach(function (step) {
+          var row = makeElement("div", "process-step");
+          row.append(makeElement("span", "process-number", step.number), makeElement("h3", "process-title", step.title), makeElement("p", "process-text", step.text));
+          fragment.appendChild(row);
+        });
+        document.getElementById("process-list").replaceChildren(fragment);
+      }
+      function buildTestimonials() {
+        var section = document.getElementById("proof");
+        if (!content.proof.testimonials.length) { section.hidden = true; return; }
+        var fragment = document.createDocumentFragment();
+        content.proof.testimonials.forEach(function (review) {
+          var card = makeElement("article", "testimonial reveal");
+          var mark = makeElement("span", "testimonial-mark", "“"); mark.setAttribute("aria-hidden", "true");
+          var name = makeElement("p", "testimonial-name", review.name);
+          name.appendChild(makeElement("span", "testimonial-detail", review.detail));
+          card.append(mark, makeElement("blockquote", "testimonial-quote", review.quote), name); fragment.appendChild(card);
+        });
+        document.getElementById("testimonial-grid").replaceChildren(fragment); section.hidden = false;
+      }
+
+      applyCopy(); buildServices(); buildGallery(); buildProcess(); buildTestimonials();
+      document.getElementById("copyright-year").textContent = String(new Date().getFullYear());
+      var dateField = document.getElementById("preferred-date");
+      var now = new Date(), offset = now.getTimezoneOffset() * 60000;
+      dateField.min = new Date(now.getTime() - offset).toISOString().slice(0, 10);
+
+      /* Cinematic feature: play only while visible and respect reduced motion. */
+      var motionVideo = document.getElementById("motion-video");
+      var motionToggle = document.getElementById("motion-toggle");
+      var motionUserPaused = false;
+      function updateMotionButton() {
+        var paused = motionVideo.paused;
+        motionToggle.textContent = paused ? "Play film" : "Pause film";
+        motionToggle.setAttribute("aria-label", paused ? "Play automotive film" : "Pause automotive film");
+      }
+      function playMotion() {
+        if (reduceMotion.matches || motionUserPaused) return;
+        var playRequest = motionVideo.play();
+        if (playRequest && typeof playRequest.catch === "function") playRequest.catch(updateMotionButton);
+      }
+      motionVideo.addEventListener("play", updateMotionButton);
+      motionVideo.addEventListener("pause", updateMotionButton);
+      motionToggle.addEventListener("click", function () {
+        if (motionVideo.paused) { motionUserPaused = false; playMotion(); }
+        else { motionUserPaused = true; motionVideo.pause(); }
+      });
+      if ("IntersectionObserver" in window) {
+        var motionObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) playMotion();
+            else motionVideo.pause();
+          });
+        }, { threshold: .2 });
+        motionObserver.observe(motionVideo);
+      } else {
+        playMotion();
+      }
+      updateMotionButton();
+
+      /* Static-host-compatible availability calendar.
+         Confirmed dates are managed in KGMEDIA_CONTENT.availability.bookedDates. */
+      var bookedDateSet = new Set((content.availability.bookedDates || []).filter(function (date) {
+        return /^\d{4}-\d{2}-\d{2}$/.test(date);
+      }));
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      var calendarView = new Date(today.getFullYear(), today.getMonth(), 1);
+      var selectedDateKey = "";
+      var calendarMonth = document.getElementById("calendar-month");
+      var calendarDays = document.getElementById("calendar-days");
+      var calendarPrevious = document.getElementById("calendar-previous");
+      var calendarNext = document.getElementById("calendar-next");
+      var calendarResult = document.getElementById("calendar-result");
+      var calendarResultKicker = document.getElementById("calendar-result-kicker");
+      var calendarResultTitle = document.getElementById("calendar-result-title");
+      var calendarResultCopy = document.getElementById("calendar-result-copy");
+      var calendarContinue = document.getElementById("calendar-continue");
+
+      function dateKey(date) {
+        return [date.getFullYear(), String(date.getMonth() + 1).padStart(2, "0"), String(date.getDate()).padStart(2, "0")].join("-");
+      }
+      function dateFromKey(key) {
+        var parts = key.split("-").map(Number);
+        return new Date(parts[0], parts[1] - 1, parts[2]);
+      }
+      function longDate(date) {
+        return new Intl.DateTimeFormat("en-CA", { weekday: "long", month: "long", day: "numeric", year: "numeric" }).format(date);
+      }
+      function showDateStatus(key) {
+        var date = dateFromKey(key);
+        var booked = bookedDateSet.has(key);
+        selectedDateKey = key;
+        calendarResult.className = "calendar-result " + (booked ? "is-booked" : "is-available");
+        calendarResultKicker.textContent = booked ? "Already booked" : "Date appears open";
+        calendarResultTitle.textContent = longDate(date);
+        if (booked) {
+          calendarResultCopy.textContent = "KGMedia already has a confirmed booking on this date. Try another day or include flexible timing in your enquiry.";
+          calendarContinue.hidden = true;
+          if (dateField.value === key) dateField.value = "";
+        } else {
+          calendarResultCopy.textContent = "This date is currently available. Continue to send the details and receive final confirmation by email.";
+          calendarContinue.hidden = false;
+          dateField.value = key;
+        }
+        renderCalendar();
+      }
+      function renderCalendar() {
+        var year = calendarView.getFullYear();
+        var month = calendarView.getMonth();
+        var firstWeekday = new Date(year, month, 1).getDay();
+        var daysInMonth = new Date(year, month + 1, 0).getDate();
+        var fragment = document.createDocumentFragment();
+        calendarMonth.textContent = new Intl.DateTimeFormat("en-CA", { month: "long", year: "numeric" }).format(calendarView);
+        for (var blank = 0; blank < firstWeekday; blank += 1) {
+          var empty = makeElement("span", "calendar-empty");
+          empty.setAttribute("role", "gridcell");
+          empty.setAttribute("aria-hidden", "true");
+          fragment.appendChild(empty);
+        }
+        for (var day = 1; day <= daysInMonth; day += 1) {
+          var date = new Date(year, month, day);
+          var key = dateKey(date);
+          var past = date < today;
+          var booked = bookedDateSet.has(key);
+          var button = makeElement("button", "calendar-day " + (past ? "is-past" : booked ? "is-booked" : "is-available"), String(day));
+          button.type = "button";
+          button.dataset.date = key;
+          button.setAttribute("role", "gridcell");
+          button.setAttribute("aria-label", longDate(date) + (past ? ", past" : booked ? ", booked" : ", available"));
+          button.setAttribute("aria-pressed", String(selectedDateKey === key));
+          if (selectedDateKey === key) button.classList.add("is-selected");
+          if (past) button.disabled = true;
+          fragment.appendChild(button);
+        }
+        calendarDays.replaceChildren(fragment);
+        calendarPrevious.disabled = year === today.getFullYear() && month === today.getMonth();
+      }
+      calendarPrevious.addEventListener("click", function () {
+        calendarView = new Date(calendarView.getFullYear(), calendarView.getMonth() - 1, 1);
+        renderCalendar();
+      });
+      calendarNext.addEventListener("click", function () {
+        calendarView = new Date(calendarView.getFullYear(), calendarView.getMonth() + 1, 1);
+        renderCalendar();
+      });
+      calendarDays.addEventListener("click", function (event) {
+        var day = event.target.closest("[data-date]");
+        if (day && !day.disabled) showDateStatus(day.dataset.date);
+      });
+      dateField.addEventListener("change", function () {
+        if (!dateField.value) return;
+        var chosen = dateFromKey(dateField.value);
+        calendarView = new Date(chosen.getFullYear(), chosen.getMonth(), 1);
+        showDateStatus(dateField.value);
+      });
+      renderCalendar();
+
+      /* Responsive navigation */
+      var header = document.getElementById("site-header");
+      var toggle = document.querySelector(".menu-toggle");
+      var mobileMenu = document.getElementById("mobile-menu");
+      function setMenu(open) {
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+        mobileMenu.classList.toggle("is-open", open);
+        header.classList.toggle("is-menu-open", open);
+        document.body.classList.toggle("nav-open", open);
+      }
+      toggle.addEventListener("click", function () { setMenu(toggle.getAttribute("aria-expanded") !== "true"); });
+      mobileMenu.querySelectorAll("a").forEach(function (link) { link.addEventListener("click", function () { setMenu(false); }); });
+      document.addEventListener("keydown", function (event) { if (event.key === "Escape") setMenu(false); });
+      window.addEventListener("resize", function () { if (innerWidth > 780) setMenu(false); });
+
+      /* Scroll-driven hero and header */
+      var hero = document.getElementById("home"), ticking = false;
+      function updateScroll() {
+        header.classList.toggle("is-scrolled", scrollY > 28);
+        if (!reduceMotion.matches) {
+          var rect = hero.getBoundingClientRect();
+          var travel = Math.max(1, hero.offsetHeight - innerHeight);
+          var p = Math.min(1, Math.max(0, -rect.top / travel));
+          var maxInset = innerWidth <= 780 ? 12 : Math.min(54, innerWidth * .035);
+          var root = document.documentElement.style;
+          root.setProperty("--hero-scale", String(1.1 - p * .1));
+          root.setProperty("--hero-blur", String(Math.max(0, 5 - p * 10)) + "px");
+          root.setProperty("--hero-inset", String(p * maxInset) + "px");
+          root.setProperty("--hero-copy-opacity", String(Math.max(0, 1 - p * 1.75)));
+          root.setProperty("--hero-copy-shift", String(p * -24) + "px");
+          root.setProperty("--hero-finish-opacity", String(Math.min(1, Math.max(0, (p - .58) / .3))));
+        }
+        ticking = false;
+      }
+      function requestUpdate() { if (!ticking) { requestAnimationFrame(updateScroll); ticking = true; } }
+      addEventListener("scroll", requestUpdate, { passive: true });
+      addEventListener("resize", requestUpdate);
+      if (reduceMotion.addEventListener) reduceMotion.addEventListener("change", function () {
+        requestUpdate();
+        if (reduceMotion.matches) motionVideo.pause();
+        else playMotion();
+      });
+      updateScroll();
+
+      /* Reveal motion */
+      var revealItems = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window && !reduceMotion.matches) {
+        var revealObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) { entry.target.classList.add("is-visible"); observer.unobserve(entry.target); }
+          });
+        }, { threshold: .12, rootMargin: "0px 0px -40px" });
+        revealItems.forEach(function (item) { revealObserver.observe(item); });
+      } else {
+        revealItems.forEach(function (item) { item.classList.add("is-visible"); });
+      }
+
+      /* Active navigation */
+      if ("IntersectionObserver" in window) {
+        var navLinks = document.querySelectorAll(".desktop-nav .nav-link");
+        var navObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach(function (link) {
+              if (link.getAttribute("href") === "#" + entry.target.id) link.setAttribute("aria-current", "true");
+              else link.removeAttribute("aria-current");
+            });
+          });
+        }, { threshold: .38 });
+        ["work", "services", "approach", "ottawa"].forEach(function (id) { navObserver.observe(document.getElementById(id)); });
+      }
+
+      /* Accessible gallery lightbox */
+      var lightbox = document.getElementById("lightbox");
+      var lightboxImage = document.getElementById("lightbox-image");
+      var lightboxCaption = document.getElementById("lightbox-caption");
+      document.getElementById("gallery-grid").addEventListener("click", function (event) {
+        var button = event.target.closest("[data-gallery-index]");
+        if (!button) return;
+        var item = content.gallery[Number(button.dataset.galleryIndex)];
+        lightboxImage.src = item.image; lightboxImage.alt = item.alt; lightboxCaption.textContent = item.category;
+        lightbox.showModal();
+      });
+      lightbox.querySelector(".lightbox-close").addEventListener("click", function () { lightbox.close(); });
+      lightbox.addEventListener("click", function (event) { if (event.target === lightbox) lightbox.close(); });
+
+      /* MAP: GOOGLE MAPS START */
+      document.getElementById("service-map").src = content.tools.mapEmbedUrl;
+      /* MAP: GOOGLE MAPS END */
+
+      /* CONTACT FORM: FORMSPREE START */
+      var requestForm = document.getElementById("enquiry-form");
+      var formStatus = document.getElementById("form-status");
+      var formSubmit = document.getElementById("form-submit");
+      function formspreeReady() {
+        return /^https:\/\/formspree\.io\/f\/(?!YOUR_FORM_ID)[a-zA-Z0-9]+$/.test(content.tools.formspreeEndpoint);
+      }
+      requestForm.addEventListener("submit", function (event) {
+        event.preventDefault(); formStatus.className = "form-status";
+        if (!requestForm.reportValidity()) return;
+        if (!formspreeReady()) {
+          formStatus.textContent = content.enquiry.setupMessage; formStatus.classList.add("is-error"); return;
+        }
+        formSubmit.disabled = true;
+        formSubmit.querySelector("[data-copy]").textContent = content.enquiry.sending;
+        formStatus.textContent = "";
+        fetch(content.tools.formspreeEndpoint, {
+          method: "POST", body: new FormData(requestForm), headers: { Accept: "application/json" }
+        }).then(function (response) {
+          if (!response.ok) throw new Error("Submission failed");
+          requestForm.reset(); formStatus.textContent = content.enquiry.success; formStatus.classList.add("is-success");
+        }).catch(function () {
+          formStatus.textContent = content.enquiry.error; formStatus.classList.add("is-error");
+        }).finally(function () {
+          formSubmit.disabled = false; formSubmit.querySelector("[data-copy]").textContent = content.enquiry.submit;
+        });
+      });
+      /* CONTACT FORM: FORMSPREE END */
+
+      /* NEWSLETTER: KIT START */
+      var newsletterForm = document.getElementById("newsletter-form");
+      var newsletterStatus = document.getElementById("newsletter-status");
+      function kitReady() {
+        return /^https:\/\//.test(content.tools.kitFormAction) && !content.tools.kitFormAction.includes("YOUR_KIT_FORM_ACTION");
+      }
+      newsletterForm.addEventListener("submit", function (event) {
+        if (!kitReady()) {
+          event.preventDefault(); newsletterStatus.textContent = content.newsletter.setupMessage; return;
+        }
+        newsletterForm.action = content.tools.kitFormAction;
+        newsletterStatus.textContent = "Opening the secure signup confirmation…";
+      });
+      /* NEWSLETTER: KIT END */
+
+      /* ANALYTICS: CLOUDFLARE START */
+      if (content.tools.cloudflareAnalyticsToken && !content.tools.cloudflareAnalyticsToken.includes("YOUR_CLOUDFLARE_TOKEN")) {
+        var beacon = document.createElement("script");
+        beacon.defer = true;
+        beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+        beacon.dataset.cfBeacon = JSON.stringify({ token: content.tools.cloudflareAnalyticsToken });
+        document.head.appendChild(beacon);
+      }
+      /* ANALYTICS: CLOUDFLARE END */
+    }());
+  </script>
+</body>
+</html>
