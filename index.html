@@ -58,7 +58,6 @@ BEFORE PUBLISHING
       servicesSection: {
         eyebrow: "What we photograph",
         headline: "Every story has its own rhythm",
-        intro: "From quiet portraits to rooms alive with energy, KGMedia photographs what matters without pulling you out of the moment.",
         action: "Request a tailored quote"
       },
       services: [
@@ -472,6 +471,7 @@ BEFORE PUBLISHING
       display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .65fr);
       align-items: end; gap: 60px; margin-bottom: clamp(54px, 7vw, 90px);
     }
+    .services-header { grid-template-columns: 1fr; }
     .split-header .lead { margin: 0; }
     .service-list { border-top: 1px solid var(--line-light); }
     .service-card {
@@ -847,12 +847,11 @@ BEFORE PUBLISHING
 
     <section class="section light-section" id="services" aria-labelledby="services-title">
       <div class="section-inner">
-        <div class="split-header reveal">
+        <div class="split-header services-header reveal">
           <div>
             <p class="eyebrow" data-copy="servicesSection.eyebrow">What we photograph</p>
             <h2 class="display-title" id="services-title" data-copy="servicesSection.headline">Every story has its own rhythm</h2>
           </div>
-          <p class="lead" data-copy="servicesSection.intro">From quiet portraits to rooms alive with energy, KGMedia photographs what matters without pulling you out of the moment.</p>
         </div>
         <div class="service-list" id="service-list" aria-label="Photography services"></div>
         <div class="service-footer reveal">
