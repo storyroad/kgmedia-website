@@ -355,16 +355,20 @@ BEFORE PUBLISHING
       min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
       padding: 13px 21px; border: 1px solid transparent; border-radius: 999px; cursor: pointer;
       font-size: .7rem; font-weight: 600; letter-spacing: .12em; line-height: 1.2;
-      text-align: center; text-transform: uppercase; transition: transform .18s, background .18s, border-color .18s;
+      text-align: center; text-transform: uppercase; touch-action: manipulation; user-select: none;
+      transition: transform .18s, background .18s, border-color .18s;
     }
-    .button:hover { transform: translateY(-2px); }
     .button--light { background: var(--ivory); color: var(--ink); }
     .button--dark { background: var(--ink); color: var(--ivory); }
     .button--outline { border-color: rgba(245, 240, 232, .5); background: transparent; color: var(--ivory); }
-    .button--outline:hover { border-color: var(--ivory); }
     .button--text { min-height: 44px; padding-inline: 0; border-radius: 0; border-bottom-color: currentColor; }
     .button-arrow { font-size: 1.1rem; line-height: 1; transition: transform .18s; }
-    .button:hover .button-arrow { transform: translateX(4px); }
+    .button:active { transform: scale(.985); }
+    @media (hover: hover) and (pointer: fine) {
+      .button:hover { transform: translateY(-2px); }
+      .button--outline:hover { border-color: var(--ivory); }
+      .button:hover .button-arrow { transform: translateX(4px); }
+    }
 
     /* Hero */
     .hero { position: relative; height: 180vh; min-height: 1000px; background: var(--ink); }
@@ -400,7 +404,7 @@ BEFORE PUBLISHING
       position: absolute; z-index: 2;
       right: max(24px, calc((100vw - min(1180px, calc(100vw - 40px))) / 2)); bottom: 7vh;
       max-width: 390px; padding: 24px 0 0 38px; border-left: 1px solid rgba(245,240,232,.58);
-      opacity: var(--hero-finish-opacity); will-change: opacity;
+      opacity: var(--hero-finish-opacity); pointer-events: none; will-change: opacity;
     }
     .hero-finish strong { display: block; font: 500 clamp(2rem, 3.4vw, 3.8rem)/.95 var(--display); }
     .hero-finish span { display: block; margin-top: 12px; color: var(--muted); font-size: .65rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
@@ -623,7 +627,10 @@ BEFORE PUBLISHING
     .footer-name { display: block; font: 500 clamp(2.2rem,4vw,4.4rem)/.9 var(--display); }
     .footer-voice { display: block; margin-top: 10px; color: var(--muted); font-size: .7rem; letter-spacing: .07em; }
     .footer-action { font: 500 clamp(1.6rem,2.6vw,2.8rem)/1 var(--display); border-bottom: 1px solid rgba(245,240,232,.48); }
-    .footer-bottom { display: flex; justify-content: space-between; gap: 28px; padding-top: 24px; border-top: 1px solid var(--line-dark); color: var(--muted); font-size: .63rem; letter-spacing: .08em; text-transform: uppercase; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px 28px; padding-top: 24px; border-top: 1px solid var(--line-dark); color: var(--muted); font-size: .63rem; letter-spacing: .08em; text-transform: uppercase; }
+    .footer-social { display: flex; align-items: center; gap: 18px; margin-left: auto; }
+    .footer-social a { min-height: 44px; display: inline-flex; align-items: center; border-bottom: 1px solid transparent; touch-action: manipulation; }
+    @media (hover: hover) and (pointer: fine) { .footer-social a:hover { color: var(--ivory); border-bottom-color: var(--gold); } }
 
     /* Lightbox and reveal */
     .lightbox { width: min(1100px,calc(100vw - 32px)); max-width: none; height: min(88vh,900px); max-height: none; padding: 0; border: 0; background: transparent; color: var(--ivory); }
@@ -703,6 +710,7 @@ BEFORE PUBLISHING
       .footer-top { grid-template-columns: 1fr; }
       .footer-action { justify-self: start; }
       .footer-bottom { align-items: flex-start; flex-direction: column; }
+      .footer-social { margin-left: 0; }
     }
     @media (max-width: 480px) {
       .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: auto; }
@@ -1023,6 +1031,10 @@ BEFORE PUBLISHING
       </div>
       <div class="footer-bottom">
         <span data-copy="footer.services">Weddings · Cultural events · Celebrations · Portraits · Business</span>
+        <nav class="footer-social" aria-label="KGMedia social media">
+          <a href="https://www.instagram.com/kgmedia.co/" target="_blank" rel="noopener noreferrer" aria-label="KGMedia on Instagram, opens in a new tab">Instagram ↗</a>
+          <a href="https://www.facebook.com/people/KG-Media-Company/61570712840543/" target="_blank" rel="noopener noreferrer" aria-label="KGMedia on Facebook, opens in a new tab">Facebook ↗</a>
+        </nav>
         <span>© <span id="copyright-year"></span> <span data-copy="footer.copyright">KGMedia. All rights reserved.</span></span>
       </div>
     </div>
@@ -1268,7 +1280,8 @@ BEFORE PUBLISHING
           event.preventDefault();
           setMenu(false);
           requestAnimationFrame(function () {
-            target.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "start" });
+            var scrollBehavior = !reduceMotion.matches && innerWidth > 780 ? "smooth" : "auto";
+            target.scrollIntoView({ behavior: scrollBehavior, block: "start" });
             if (window.history && history.pushState) history.pushState(null, "", "#" + id);
           });
         });
